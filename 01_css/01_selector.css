@@ -1,0 +1,38 @@
+/* 전체선택자 */
+/* cascading stlye sheet이기 때문에 위에서 아래로 읽는다 우선순위가 아래에 있다 */
+
+* {
+  color: red;
+}
+
+/* 태그 선택자 */
+h1 {
+  color: blue;
+}
+
+/* 클래스 선택자 */
+
+.yellow {
+  color: yellow;
+}
+
+.pink {
+  color: pink;
+}
+
+.bold {
+  font-weight: bold;
+}
+/* 아이디 선택자 */
+#green {
+  color: green;
+}
+
+#purple {
+  color: purple;
+}
+
+#orange {
+  color: brown !important;  /* 무조건 어떤 것보다 우선순위가 높다는 것 */
+  color: orange;
+}

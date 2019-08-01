@@ -1,0 +1,26 @@
+h1 {
+  /* fond-size: 2em;  default에 2배라는 뜻임 */
+  color: darkgoldenrod;
+  /* 디폴트의 50퍼 8px*/
+  font-size: 50%;
+}
+section {
+  font-size: 50%
+}
+
+section > h2 {
+  color: skyblue;
+  /* 상속의 영향 section은 8px에 5배 */
+  font-size: 5em;
+}
+
+ul {
+  /* 최상단의 있는 default 사이즈의 영향을 받음 */
+  font-size: 2rem;
+}
+
+#box {
+  width: 50vw;
+  height: 100px;
+  background-color: aqua;
+}
