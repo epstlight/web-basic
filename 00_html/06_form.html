@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Form</title>
+</head>
+<body>
+  <!-- action 옵션이 어디로 form을 제출할지 적어주는 곳 비워두면 자기자신한테 보냄 -->
+  <!-- value값으로 defalut 값을 넣어 줄수 있다. -->
+  <form action="#">  <!-- #은 아무곳에도 보내지 않는것 -->
+    TEXT: <input type="text" name="name"value="default 값" placeholder="내용을 입력해주세요" /> <br/>
+    NUMBER: <input type="number" name="phone" placeholder="숫자를 입력해주세요"><br/>
+    PASSWORD: <input type="password" placeholder="암호를 입력해주세요"> <br/>
+    E-MAIL: <input type="email"><br/>
+    DATE: <input type="date" name="date" value="2019-08-01"><br/>
+  
+    <!-- name을 통일 value값으로 사용자가 체크한 값을 알수있다. -->
+    <!-- 옵션명을 적어주면 기본적으로 true가 들어간다. 안적어주면 false -->
+    <input type="radio" name="language" value="1"/>HTML<br/>
+    <input type="radio" name="language" value="2" checked/>CSS<br/>
+    <input type="radio" name="language" value="3"/>JS<br/>
+    <hr/>
+
+    <!--  -->
+    <select name="country">
+      <option value="1">한국</option>
+      <option value="2" selected>중국</option>
+      <option value="3" disabled>일본</option>
+    </select><br/>
+    <!-- checkbox는 여러개선택가능 -->
+    <input type="checkbox" name="option" value="1" checked>
+    <input type="checkbox" name="option" value="2"><br/>
+    <!-- 색 입력 -->
+    <input type="color" value="#FF6600"> <br/>
+    <!-- form을 보내는 버튼 생성 -->
+    <input type="submit" value="제출하기"/>
+  </form>
+
+  
+</body>
+</html>
