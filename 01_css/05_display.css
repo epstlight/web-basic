@@ -1,0 +1,14 @@
+li {
+  display: inline-block;
+  width: 300px;
+  height: 100px;
+  margin: 20px;
+}
+
+#bye {
+  display: none;
+}
+
+#hollow {
+  visibility: hidden;
+}
